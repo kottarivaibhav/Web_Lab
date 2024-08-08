@@ -1,0 +1,11 @@
+.board {
+    max-width: 300px;
+    margin: 0 auto;
+}
+.square {
+    padding: 40px;
+}
+#winner {
+    background-color: #009100;
+    width: 300px;
+}

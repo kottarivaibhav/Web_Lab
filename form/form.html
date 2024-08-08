@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting Form</title>
+    <script >
+        function greetUser(event) {
+            event.preventDefault(); // Prevent the form from submitting and reloading the page
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            alert("Hello " + firstName + " " + lastName + "!");
+        }
+    </script>
+</head>
+<body>
+    <h1>Greeting Form</h1>
+    <form onsubmit="greetUser(event)">
+        <label >First Name:</label>
+        <input type="text" id="firstName" ><br><br>
+
+        <label >Last Name:</label>
+        <input type="text" id="lastName"><br><br>
+
+        <button type="submit" onsubmit="greetUser(event)">Greet Me</button>
+    </form>
+</body>
+</html>
